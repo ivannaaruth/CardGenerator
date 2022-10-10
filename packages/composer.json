@@ -1,0 +1,13 @@
+{
+    "name": "faidatul/menugenerator",
+    "description": "A food menu generator package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "faidatul",
+        "email": "faidatul2205@gmail.com"
+      }
+    ],
+    "require": {}
+  }
