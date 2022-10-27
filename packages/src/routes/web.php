@@ -17,3 +17,5 @@ use Illuminate\Http\Request;
 Route::get('/', function () {
     return view('main');
 });
+
+Route::get('/result','packages\src\Http\Controllers\FoodListController@results');

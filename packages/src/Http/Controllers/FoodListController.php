@@ -12,7 +12,9 @@ use Illuminate\Http\Request;
 class FoodListController extends BaseController
 {
     
-    public function index() {
-    	return view('input');
+    public function results() {
+    	return view('result');
     }
+
+    
 }

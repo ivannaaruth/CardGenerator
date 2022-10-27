@@ -16,9 +16,7 @@
    <input type="file" name='pict'><hr>
 
     <a class="btn btn-primary" href="" role="button">Create Now</a>
-    </form>
-    
-
+</form>
 </div>
 
 
