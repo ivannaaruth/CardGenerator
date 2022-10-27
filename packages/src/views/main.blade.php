@@ -1,15 +1,36 @@
-
+<html lang="en">
+<head>
+    <title>Menu Maker</title>
+    <link rel="stylesheet" href="preview.css">
+</head>
+<body>
 
 <div class="container">
 
     <h2>Welcome to Food Menu Generator</h2>
     <h4>You Can Fill the Data of Your Food</h4><hr>
 
-
     <form action="" method='POST'>
 
-    <p>Food Name</p>
+    <label>Food Name</label><br>
     <input type="text" id="name" oninput="funcName()" name='foodName' placeholder='food name'><br>
+    
+    <label>Food Description</label><br>
+    <input type="text" id="desc" oninput="funcDesc()" name='foodDesc' placeholder='food description'><br>
+
+    <label>Food Price</label><br>
+    <input type="text" id="price" oninput="funcPrice()" name='price' placeholder='price'><br>
+
+    <label>Main Compotition</label><br>
+    <input type="text" id="comp" oninput="funcComp()" name='compo' placeholder='main composition'><br>
+
+    <label>Food Image</label><br>
+    <input type="file" id="img" name='pict'><hr>
+    <a class="btn btn-primary" href="{{ url('/result') }}"  role="button">Create Now</a>
+
+    </form>
+
+    <div class="overlap-group">
     <p id="pName"></p>
     <script>
         function funcName() {
@@ -17,9 +38,7 @@
             document.getElementById("pName").innerHTML = "Preview Food Name: " + name;
         }
     </script>
-    
-    <p>Food Description</p>
-    <input type="text" id="desc" oninput="funcDesc()" name='foodDesc' placeholder='food description'><br>
+
     <p id="pDesc"></p>
     <script>
         function funcDesc() {
@@ -28,8 +47,6 @@
         }
     </script>
 
-    <p>Food Price</p>
-    <input type="text" id="price" oninput="funcPrice()" name='price' placeholder='price'><br>
     <p id="pPrice"></p>
     <script>
         function funcPrice() {
@@ -38,22 +55,14 @@
         }
     </script>
 
-    <p>Main Compotition</p>
-    <input type="text" id="comp" oninput="funcComp()" name='compo' placeholder='main composition'><br>
     <p id="pComp"></p>
-    <script>
+        <script>
         function funcComp() {
             var comp = document.getElementById("comp").value;
             document.getElementById("pComp").innerHTML = "Preview Compotition: " + comp;
         }
-    </script>
+        </script>
+    </div>
 
-    <p>Food Image</p>
-    <input type="file" name='pict'><hr>
-    <a class="btn btn-primary" href="{{ url('/result') }}"  role="button">Create Now</a>
-
-    </form>
-  
-    
-
-</div>
+</body>
+</html>

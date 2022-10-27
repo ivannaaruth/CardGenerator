@@ -1,0 +1,72 @@
+/* .hidden,
+.hidden * {
+    pointer-events: none;
+    visibility: hidden;
+} */
+.overlap-group{
+    /* align-items: flex-start; */
+    background-color: #ffebd7;
+    border: 1px none;
+    /* display: flex; */
+    height: 400px;
+    width: 200px;
+    /* justify-content: flex-start; */
+    padding: 9px 9px;
+}
+input#name{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 24px;
+    font-size: 14px;
+}
+input#desc{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 24px;
+    font-size: 14px;
+}
+input#price{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 24px;
+    font-size: 14px;
+}
+input#comp{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 24px;
+    font-size: 14px;
+}
+#img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 24px;
+    font-size: 14px;
+}
+#pName{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: 400;
+    letter-spacing: 0;
+    /* line-height: normal; */
+    width: 181px;
+}
+/* .test{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    min-height: 27px;
+    width: 181px;
+} */
+#pComp {
+    color: red;
+  }
