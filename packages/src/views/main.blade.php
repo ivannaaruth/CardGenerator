@@ -8,6 +8,7 @@
 
     <form action="" method='POST'>
 
+    <p>Food Name</p>
     <input type="text" id="name" oninput="funcName()" name='foodName' placeholder='food name'><br>
     <p id="pName"></p>
     <script>
@@ -17,6 +18,7 @@
         }
     </script>
     
+    <p>Food Description</p>
     <input type="text" id="desc" oninput="funcDesc()" name='foodDesc' placeholder='food description'><br>
     <p id="pDesc"></p>
     <script>
@@ -26,6 +28,7 @@
         }
     </script>
 
+    <p>Food Price</p>
     <input type="text" id="price" oninput="funcPrice()" name='price' placeholder='price'><br>
     <p id="pPrice"></p>
     <script>
@@ -35,6 +38,7 @@
         }
     </script>
 
+    <p>Main Compotition</p>
     <input type="text" id="comp" oninput="funcComp()" name='compo' placeholder='main composition'><br>
     <p id="pComp"></p>
     <script>
@@ -44,6 +48,7 @@
         }
     </script>
 
+    <p>Food Image</p>
     <input type="file" name='pict'><hr>
     <a class="btn btn-primary" href="{{ url('/result') }}"  role="button">Create Now</a>
 
