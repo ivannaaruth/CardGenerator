@@ -32,6 +32,18 @@
     </form>
 
     <div class="overlap-group">
+
+    <img id="pImg"/>
+    <script>
+        var loadFile = function(event){
+            var img = document.getElementById('pImg');
+            img.src = URL.createObjectURL(event.target.files[0]);
+            img.onload = function() {
+            URL.revokeObjectURL(img.src) // free memory
+            }
+        }
+    </script>
+    
     <p id="pName"></p>
     <script>
         function funcName() {
@@ -63,17 +75,6 @@
             document.getElementById("pComp").innerHTML = "Preview Compotition: " + comp;
         }
         </script>
-    
-    <img id="pImg"/>
-    <script>
-        var loadFile = function(event){
-            var img = document.getElementById('pImg');
-            img.src = URL.createObjectURL(event.target.files[0]);
-            img.onload = function() {
-            URL.revokeObjectURL(img.src) // free memory
-            }
-        }
-    </script>
 
     </div>
 

@@ -11,7 +11,7 @@
     height: 400px;
     width: 200px;
     /* justify-content: flex-start; */
-    padding: 9px 9px;
+    /* padding: 9px 9px; */
 }
 input#name{
     margin-top: 10px;
@@ -48,6 +48,10 @@ input#comp{
     height: 24px;
     font-size: 14px;
 }
+#pImg{
+    height: 250px;
+    width: 200px;
+}
 #pName{
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -56,11 +60,18 @@ input#comp{
     letter-spacing: 0;
     /* line-height: normal; */
     width: 181px;
+    padding: 9px 9px;
 }
-#pImg{
-    height: 100px;
-    width: 200px;
+#pDesc{
+    padding: 9px 9px;
 }
+#pPrice{
+    padding: 9px 9px;
+}
+#pComp{
+    padding: 9px 9px;
+}
+
 /* .test{
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
