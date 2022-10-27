@@ -1,10 +1,5 @@
-/* .hidden,
-.hidden * {
-    pointer-events: none;
-    visibility: hidden;
-} */
 .overlap-group{
-    /* align-items: flex-start; */
+    align-items: flex-start;
     background-color: #ffebd7;
     border: 1px none;
     /* display: flex; */
@@ -12,6 +7,11 @@
     width: 200px;
     /* justify-content: flex-start; */
     /* padding: 9px 9px; */
+    position: absolute;
+    top: 100px;
+    right:10px;
+    width:200px;
+    border:5px;
 }
 input#name{
     margin-top: 10px;
@@ -20,11 +20,11 @@ input#name{
     height: 24px;
     font-size: 14px;
 }
-input#desc{
+textarea#desc{
     margin-top: 10px;
     margin-bottom: 10px;
     width: 200px;
-    height: 24px;
+    height: 72px;
     font-size: 14px;
 }
 input#price{
@@ -49,39 +49,27 @@ input#comp{
     font-size: 14px;
 }
 #pImg{
-    height: 250px;
+    height: 225px;
     width: 200px;
 }
 #pName{
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: large;
-    font-weight: 400;
+    font-size: 18px;
     letter-spacing: 0;
-    /* line-height: normal; */
-    width: 181px;
-    padding: 9px 9px;
+    width: 182px;
+    padding: 0px 9px;
 }
 #pDesc{
-    padding: 9px 9px;
+    padding: 0px 9px;
+    font-size: 14px;
+    word-wrap: break-word;
 }
 #pPrice{
-    padding: 9px 9px;
+    font-size: 14px;
+    padding: 0px 9px;
 }
 #pComp{
-    padding: 9px 9px;
+    font-size: 12px;
+    padding: 0px 9px;
 }
-
-/* .test{
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: small;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: normal;
-    min-height: 27px;
-    width: 181px;
-} */
-#pComp {
-    color: red;
-  }

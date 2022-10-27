@@ -16,8 +16,9 @@
     <input type="text" id="name" oninput="funcName()" name='foodName' placeholder='food name'><br>
     
     <label>Food Description</label><br>
-    <input type="text" id="desc" oninput="funcDesc()" name='foodDesc' placeholder='food description'><br>
-
+    <!-- <input type="text" id="desc" oninput="funcDesc()" name='foodDesc' placeholder='food description'><br> -->
+    <textarea id="desc" oninput="funcDesc()" name='foodDesc' placeholder='food description' wrap="soft"></textarea><br>
+    
     <label>Food Price</label><br>
     <input type="text" id="price" oninput="funcPrice()" name='price' placeholder='price'><br>
 
@@ -30,6 +31,7 @@
     <a class="btn btn-primary" href="{{ url('/result') }}"  role="button">Create Now</a>
 
     </form>
+</div>
 
     <div class="overlap-group">
 
@@ -43,7 +45,7 @@
             }
         }
     </script>
-    
+
     <p id="pName"></p>
     <script>
         function funcName() {
