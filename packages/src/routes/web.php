@@ -17,5 +17,3 @@ use Illuminate\Http\Request;
 Route::get('/', function () {
     return view('main');
 });
-
-Route::get('/input','packages\src\Http\Controllers\FoodListController@index');
