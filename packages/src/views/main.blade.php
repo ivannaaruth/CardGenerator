@@ -25,7 +25,8 @@
     <input type="text" id="comp" oninput="funcComp()" name='compo' placeholder='main composition'><br>
 
     <label>Food Image</label><br>
-    <input type="file" id="img" name='pict'><hr>
+    <input type="file" id="img" accept="image/*" onchange="loadFile(event)" name='pict'><br>
+    
     <a class="btn btn-primary" href="{{ url('/result') }}"  role="button">Create Now</a>
 
     </form>
@@ -62,6 +63,18 @@
             document.getElementById("pComp").innerHTML = "Preview Compotition: " + comp;
         }
         </script>
+    
+    <img id="pImg"/>
+    <script>
+        var loadFile = function(event){
+            var img = document.getElementById('pImg');
+            img.src = URL.createObjectURL(event.target.files[0]);
+            img.onload = function() {
+            URL.revokeObjectURL(img.src) // free memory
+            }
+        }
+    </script>
+
     </div>
 
 </body>

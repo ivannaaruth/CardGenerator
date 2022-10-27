@@ -57,6 +57,10 @@ input#comp{
     /* line-height: normal; */
     width: 181px;
 }
+#pImg{
+    height: 100px;
+    width: 200px;
+}
 /* .test{
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
