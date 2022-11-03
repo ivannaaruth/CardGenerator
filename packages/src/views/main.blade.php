@@ -1,31 +1,31 @@
 <html lang="en">
 <head>
-    <title>Menu Maker</title>
+    <title>Card Item Maker</title>
     <link rel="stylesheet" href="preview.css">
 </head>
 <body>
 
 <div class="container">
 
-    <h2>Welcome to Food Menu Generator</h2>
-    <h4>You Can Fill the Data of Your Food</h4><hr>
+    <h2>Welcome to Card Item Generator</h2>
+    <h4>You Can Fill the Data of Your Item</h4><hr>
 
     <form action="" method='POST'>
 
-    <label>Food Name</label><br>
-    <input type="text" id="name" oninput="funcName()" name='foodName' placeholder='food name'><br>
+    <label>Item Name</label><br>
+    <input type="text" id="name" oninput="funcName()" name='foodName' placeholder='item name'><br>
     
-    <label>Food Description</label><br>
+    <label>Item Description</label><br>
     <!-- <input type="text" id="desc" oninput="funcDesc()" name='foodDesc' placeholder='food description'><br> -->
-    <textarea id="desc" oninput="funcDesc()" name='foodDesc' placeholder='food description' wrap="soft"></textarea><br>
+    <textarea id="desc" oninput="funcDesc()" name='foodDesc' placeholder='item description' wrap="soft"></textarea><br>
     
-    <label>Food Price</label><br>
+    <label>Item Price</label><br>
     <input type="text" id="price" oninput="funcPrice()" name='price' placeholder='price'><br>
 
-    <label>Main Compotition</label><br>
-    <input type="text" id="comp" oninput="funcComp()" name='compo' placeholder='main composition'><br>
+    <label>Compotition</label><br>
+    <input type="text" id="comp" oninput="funcComp()" name='compo' placeholder='composition'><br>
 
-    <label>Food Image</label><br>
+    <label>Item Image</label><br>
     <input type="file" id="img" accept="image/*" onchange="loadFile(event)" name='pict'><br>
     
     <a class="btn btn-primary" href="{{ url('/result') }}"  role="button">Create Now</a>
@@ -33,7 +33,7 @@
     </form>
 </div>
 
-    <div class="overlap-group">
+<div class="overlap-group">
 
     <img id="pImg"/>
     <script>
@@ -50,7 +50,7 @@
     <script>
         function funcName() {
             var name = document.getElementById("name").value;
-            document.getElementById("pName").innerHTML = "Preview Food Name: " + name;
+            document.getElementById("pName").innerHTML = "Preview Item Name: " + name;
         }
     </script>
 
@@ -58,7 +58,7 @@
     <script>
         function funcDesc() {
             var desc = document.getElementById("desc").value;
-            document.getElementById("pDesc").innerHTML = "Preview Food Desc: " + desc;
+            document.getElementById("pDesc").innerHTML = "Preview Item Desc: " + desc;
         }
     </script>
 
@@ -66,7 +66,7 @@
     <script>
         function funcPrice() {
             var price = document.getElementById("price").value;
-            document.getElementById("pPrice").innerHTML = "Preview Food Price: " + price;
+            document.getElementById("pPrice").innerHTML = "Preview Item Price: " + price;
         }
     </script>
 

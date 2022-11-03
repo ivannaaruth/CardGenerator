@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('main');
 });
 
-Route::get('/result','packages\src\Http\Controllers\FoodListController@results');
+Route::get('/result','packages\src\Http\Controllers\ItemListController@results');

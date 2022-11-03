@@ -9,7 +9,7 @@ use Illuminate\Routing\Controller as BaseController;
 
 use Illuminate\Http\Request;
 
-class FoodListController extends BaseController
+class ItemListController extends BaseController
 {
     
     public function results() {

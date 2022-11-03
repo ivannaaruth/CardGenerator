@@ -1,6 +1,6 @@
 {
-    "name": "faidatul/menugenerator",
-    "description": "A food menu generator package",
+    "name": "faidatul/itemcardgenerator",
+    "description": "An item card generator package",
     "type": "library",
     "license": "MIT",
     "authors": [
