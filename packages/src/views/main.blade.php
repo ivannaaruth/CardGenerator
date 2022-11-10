@@ -47,15 +47,15 @@
                                 <div id="previewImg" style="display:none"></div>
                                 <br><button id="download" class="btn-primary">Download</button> 
                                 </div> 
-                                <div class="col-md-4 mx-auto" >
-                                    <div class="card" style="width: 12rem;" id="content2">
-                                        <img src="https://t3.ftcdn.net/jpg/02/18/21/86/360_F_218218632_jF6XAkcrlBjv1mAg9Ow0UBMLBaJrhygH.jpg" class="card-img-top" id = "pImg">
+                                <div class="col-md-auto mx-auto" >
+                                    <div class="card flex-row" id="content2">
+                                        <img class="card-img-left example-card-img-responsive" src="https://t3.ftcdn.net/jpg/02/18/21/86/360_F_218218632_jF6XAkcrlBjv1mAg9Ow0UBMLBaJrhygH.jpg"width="100" height="100"/>
                                         <div class="card-body">
-                                            <h5 class="card-title" id = "pName">Item Name</h5>
-                                            <h6 class="card-subtitle mb-2 text-muted" id = "pPrice">Item Price</h6>
-                                            <h6 id = "pDesc">Item Description</h6>
+                                            <h5 class="card-title" id = "pName2">Item Name</h5>
+                                            <h6 class="card-subtitle mb-2 text-muted" id = "pPrice2">Item Price</h6>
+                                            <h6 id = "pDesc2">Item Description</h6>
                                         </div>
-                                    </div> 
+                                    </div>
                                 <div id="previewImg2" style="display:none"></div>
                                 <br><button id="download2" class="btn-primary">Download</button> 
                                 </div> 
@@ -96,29 +96,27 @@
 </script>
 
 <script>
-    var loadFile = function(event){
-    var img = document.getElementById('pImg');
-    img.src = URL.createObjectURL(event.target.files[0]);
-    img.onload = function() {
-    URL.revokeObjectURL(img.src)}
-    }
-</script>
-<script>
     function funcName() {
     var name = document.getElementById("Name").value;
     document.getElementById("pName").innerHTML = name;
+    document.getElementById("pName2").innerHTML = name;
+
     }
 </script>
 <script>
     function funcDesc() {
     var desc = document.getElementById("desc").value;
     document.getElementById("pDesc").innerHTML = desc;
+    document.getElementById("pDesc2").innerHTML = desc;
+
     }
 </script>
 <script>
     function funcPrice() {
     var price = document.getElementById("price").value;
     document.getElementById("pPrice").innerHTML = "Rp. "+  price;
+    document.getElementById("pPrice2").innerHTML = "Rp. "+  price;
+
     }
 </script>
 
