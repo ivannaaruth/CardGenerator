@@ -49,7 +49,7 @@
                                 </div> 
                                 <div class="col-md-auto mx-auto" >
                                     <div class="card flex-row" id="content2">
-                                        <img class="card-img-left example-card-img-responsive" src="https://t3.ftcdn.net/jpg/02/18/21/86/360_F_218218632_jF6XAkcrlBjv1mAg9Ow0UBMLBaJrhygH.jpg"width="100" height="100"/>
+                                        <img class="card-img-left example-card-img-responsive" src="https://t3.ftcdn.net/jpg/02/18/21/86/360_F_218218632_jF6XAkcrlBjv1mAg9Ow0UBMLBaJrhygH.jpg"width="100" height="100" id = "pImg2"/>
                                         <div class="card-body">
                                             <h5 class="card-title" id = "pName2">Item Name</h5>
                                             <h6 class="card-subtitle mb-2 text-muted" id = "pPrice2">Item Price</h6>
@@ -93,6 +93,21 @@
 			anchorTag.click();
 		});
  });
+</script>
+
+<script>
+    var loadFile = function(event){
+    var img = document.getElementById('pImg');
+    var img2 = document.getElementById('pImg2');
+
+    img.src = URL.createObjectURL(event.target.files[0]);
+    img2.src = URL.createObjectURL(event.target.files[0]);
+
+    img.onload = function() {
+    URL.revokeObjectURL(img.src)}
+    img2.onload = function() {
+    URL.revokeObjectURL(img.src)}
+    }
 </script>
 
 <script>
