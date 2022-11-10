@@ -36,7 +36,7 @@
                         <div class="container mx-auto mt-4">
                             <div class="row">
                                 <div class="col-md-4" >
-                                    <div class="card" style="width: 12rem;" id="content">
+                                    <div class="card" style="width: 10rem;" id="content">
                                         <img src="https://t3.ftcdn.net/jpg/02/18/21/86/360_F_218218632_jF6XAkcrlBjv1mAg9Ow0UBMLBaJrhygH.jpg" class="card-img-top" id = "pImg">
                                         <div class="card-body">
                                             <h5 class="card-title" id = "pName">Item Name</h5>
