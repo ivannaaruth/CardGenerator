@@ -28,8 +28,8 @@
     <label>Item Image</label><br>
     <input type="file" id="img" accept="image/*" onchange="loadFile(event)" name='pict'><br>
     
-    <a class="btn btn-primary" href="{{ url('/result') }}"  role="button">Create Now</a>
-
+    <a class="btn btn-primary" href="result.blade.php"  role="button">Create Now</a>
+    
     </form>
 </div>
 
