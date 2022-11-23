@@ -13,9 +13,10 @@ use Illuminate\Http\Request;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('main');
+Route::group ([
+    'namespace' => 'CardMaker\Controller',
+    'prefix' => 'CardMaker',
+], function (){
+    Route::get('/', 'CardController@index');
 });
 
-Route::get('/result','packages\src\Http\Controllers\ItemListController@results');

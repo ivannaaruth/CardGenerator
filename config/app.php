@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'http://ProjectGroup5/'),
 
     'asset_url' => env('ASSET_URL'),
 
@@ -185,6 +185,8 @@ return [
         /*
          * Package Service Providers...
          */
+
+        \CardMaker\CardServiceProvider::class,
 
         /*
          * Application Service Providers...
