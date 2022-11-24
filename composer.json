@@ -28,7 +28,7 @@
         "laravel": {
             "dont-discover": [],
             "providers": [
-                "CardItemMaker\\packages\\CardServiceProvider"
+                "CardMaker\\CardServiceProvider"
             ]
         }
     }
