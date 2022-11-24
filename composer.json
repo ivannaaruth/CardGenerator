@@ -51,11 +51,20 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
+        ],
+        "post-package-install": [
+            "php artisan vendor:publish --tag=card --ansi --force"
+        ],
+        "post-package-update": [
+            "php artisan vendor:publish --tag=card --ansi --force"
         ]
     },
     "extra": {
         "laravel": {
-            "dont-discover": []
+            "dont-discover": [],
+            "providers": [
+                "CardItemMaker\\packages\\src\\CardServiceProvider"
+            ]
         }
     },
     "config": {
