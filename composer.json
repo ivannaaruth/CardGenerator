@@ -23,6 +23,9 @@
         ],
         "post-package-update": [
             "php artisan vendor:publish --tag=card --ansi --force"
+        ],
+        "post-update-cmd": [
+            "php artisan vendor:publish --provider=vendor/CardItemMaker"
         ]
     },
     "extra": {
