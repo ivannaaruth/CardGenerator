@@ -28,7 +28,7 @@ class CardServiceProvider extends ServiceProvider
         //publishes
         $this->publishes([
             __DIR__.'/views' => resource_path('views/vendor/cardmaker'),
-            __DIR__.'/Http/Controllers/CardController.php' => app_path('/Http/Controllers/CardController.php')
+            __DIR__.'/Controller/CardController.php' => app_path('/Http/Controllers/CardController.php')
         ],["card"]);
     }
 }
